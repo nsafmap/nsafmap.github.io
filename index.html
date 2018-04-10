@@ -9,7 +9,7 @@
 
 <div >
     <div style="width:30%;float:left;">
-        <h1>Leaflet geoTIFF demo</h1>
+        <h1>Soil Ph</h1>
         Clip the image using a polygon <button type="button" onclick="toggleClip()">Toggle</button></p>
         Select a color scale 
         <select onchange="changeColorScale(this)">
@@ -18,7 +18,7 @@
             <option value="greys">Greys</option>
         </select>
         0 <img id="colorScaleImage" src="" style="vertical-align: middle; height:20px; width:200px;"/> 30 kts</p>
-        Wind speed at clicked point is <span id="windSpeedValue">?</span></p>
+        Ph at clicked point is <span id="windSpeedValue">?</span></p>
         Wind direection at clicked point is <span id="windDirectionValue">?</span></p>
         
     </div>
@@ -56,7 +56,7 @@
 	}).addTo(mymap);
 
     var windSpeed = L.leafletGeotiff(
-            url='tif/wind_speed.tif',
+            url='tif/ph2502.tif',
             options={band: 0,
                 displayMin: 0,
                 displayMax: 30,
