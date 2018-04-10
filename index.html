@@ -69,7 +69,7 @@
             }
         ).addTo(mymap);
         
-    /*var windDirection = L.leafletGeotiff(
+    var windDirection = L.leafletGeotiff(
             url='tif/wind_direction.tif',
             options={band: 0,
                 displayMin: 0,
@@ -79,7 +79,7 @@
                 //clampLow: false,
                 //clampHigh: true,
                 vector:true,
-                arrowSize: 20,*/
+                arrowSize: 20,
             }
         ).addTo(mymap);
 
@@ -92,7 +92,7 @@
             marker.setLatLng([e.latlng.lat,e.latlng.lng]);
         }
         document.getElementById("windSpeedValue").innerHTML = windSpeed.getValueAtLatLng(e.latlng.lat,e.latlng.lng).toFixed(1);
-        document.getElementById("windDirectionValue").innerHTML = windDirection.getValueAtLatLng(e.latlng.lat,e.latlng.lng).toFixed(0);
+        //document.getElementById("windDirectionValue").innerHTML = windDirection.getValueAtLatLng(e.latlng.lat,e.latlng.lng).toFixed(0);
     });
    
 </script>  
