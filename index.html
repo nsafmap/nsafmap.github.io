@@ -58,8 +58,8 @@
     var windSpeed = L.leafletGeotiff(
             url='tif/ph25021.tif',
             options={band: 0,
-                displayMin: 0,
-                displayMax: 30,
+                displayMin: 3,
+                displayMax: 9,
                 name: 'Wind speed',
                 colorScale: 'rainbow',
                 clampLow: false,
@@ -69,7 +69,7 @@
             }
         ).addTo(mymap);
         
-    var windDirection = L.leafletGeotiff(
+    /*var windDirection = L.leafletGeotiff(
             url='tif/wind_direction.tif',
             options={band: 0,
                 displayMin: 0,
@@ -79,7 +79,7 @@
                 //clampLow: false,
                 //clampHigh: true,
                 vector:true,
-                arrowSize: 20,
+                arrowSize: 20,*/
             }
         ).addTo(mymap);
 
