@@ -10,14 +10,14 @@
 <div >
     <div style="width:30%;float:left;">
         <h1>Soil Ph</h1>
-        Clip the image using a polygon <button type="button" onclick="toggleClip()">Toggle</button></p>
+    
         Select a color scale 
         <select onchange="changeColorScale(this)">
             <option selected="" value="rainbow">Rainbow</option>
             <option value="viridis">Viridis</option>
             <option value="greys">Greys</option>
         </select>
-        0 <img id="colorScaleImage" src="" style="vertical-align: middle; height:20px; width:200px;"/> 30 kts</p>
+        0 <img id="colorScaleImage" src="" style="vertical-align: middle; height:20px; width:200px;"/> </p>
         Ph at clicked point is <span id="windSpeedValue">?</span></p>
         Wind direection at clicked point is <span id="windDirectionValue">?</span></p>
         
@@ -69,7 +69,7 @@
             }
         ).addTo(mymap);
         
-    var windDirection = L.leafletGeotiff(
+    /*var windDirection = L.leafletGeotiff(
             url='tif/wind_direction.tif',
             options={band: 0,
                 displayMin: 0,
@@ -79,7 +79,7 @@
                 //clampLow: false,
                 //clampHigh: true,
                 vector:true,
-                arrowSize: 20,
+                arrowSize: 20,*/
             }
         ).addTo(mymap);
 
