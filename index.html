@@ -19,7 +19,7 @@
         </select>
         3 <img id="colorScaleImage" src="" style="vertical-align: middle; height:20px; width:200px;"/>8</p>
         Ph at clicked point is <span id="windSpeedValue">?</span></p>
-      <!--  Wind direection at clicked point is <span id="windDirectionValue">?</span></p>-->
+      Wind direection at clicked point is <span id="windDirectionValue">?</span></p>
         
     </div>
     <div id="mapid" style="width:70%; height:100%;float:left;"></div>   
@@ -69,8 +69,8 @@
             }
         ).addTo(mymap);
         
-    /*var windDirection = L.leafletGeotiff(
-            url='tif/wind_direction.tif',
+    var windDirection = L.leafletGeotiff(
+            url='tif/OM2502.tif',
             options={band: 0,
                 displayMin: 0,
                 displayMax: 360,
@@ -81,7 +81,7 @@
                 vector:true,
                 arrowSize: 20,
             }
-        ).addTo(mymap);*/
+        ).addTo(mymap);
 
     document.getElementById('colorScaleImage').setAttribute('src',windSpeed.colorScaleData);
     
